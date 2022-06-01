@@ -1,7 +1,16 @@
 window.addEventListener('DOMContentLoaded', function() {
     const loading_p = document.getElementById('text-loading');
     const posts_div = document.getElementById('posts');
-    announcement_length = 10
+    fetch('https://goddot.kr/posts.json', {
+        method: 'GET',
+    })
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        announcement_length = data['posts'].length;
+        announcement_json = data;
+    });
     setTimeout(() => {
         loading_p.parentNode.removeChild(loading_p);
         let i = announcement_length;
@@ -17,13 +26,13 @@ window.addEventListener('DOMContentLoaded', function() {
             new_post.innerHTML = "";
             // Post's title, desc, img
             new_post_title.setAttribute('class', 'post-title');
-            new_post_title.setAttribute('href', 'https://goddot.kr');
+            new_post_title.setAttribute('href', announcement_json['posts'][i - 1]['linkUrl'].toString());
             new_post_title.setAttribute('target', '_self');
-            new_post_title.innerHTML = "제목" + i;
+            new_post_title.innerHTML = announcement_json['posts'][i - 1]['title'].toString();
             new_post_description.setAttribute('class', 'post-desc');
-            new_post_description.innerHTML = "설명";
+            new_post_description.innerHTML = announcement_json['posts'][i - 1]['description'].toString();
             new_post_image.setAttribute('class', 'post-img');
-            new_post_image.setAttribute('style', 'background-image:url(\'https://goddot.kr/goddot.jpg\');');
+            new_post_image.setAttribute('style', 'background-image:url(\'' + announcement_json['posts'][i - 1]['image'].toString() +'\');');
             new_post_image.innerHTML = "";
             // Add
             posts_div.appendChild(new_post);
