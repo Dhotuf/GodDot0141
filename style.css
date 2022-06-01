@@ -1,0 +1,26 @@
+/* Font(s) */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+    text-align: center;
+    margin: 12;
+    background-color: #f3f4f6;
+}
+
+.div-title {
+    width: 80%;
+    height: 140px;
+    line-height: 140px; /* value = height */
+    border-radius: 9px;
+    border-width: 0;
+    display: inline-block;
+    /* Background config */
+    background-image:url('goddot.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : cover;
+    /* Font config */
+    color: white;
+    font-family: 'Jua', sans-serif;
+    font-size: 100px;
+}
