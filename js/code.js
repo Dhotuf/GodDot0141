@@ -10,11 +10,11 @@ window.addEventListener('DOMContentLoaded', function() {
             const new_post = document.createElement('div');
             const new_post_title = document.createElement('a');
             const new_post_description = document.createElement('p');
-            const new_post_image = document.createElement('img');
+            const new_post_image = document.createElement('div');
             // Post Div
             new_post.setAttribute('class', 'div-post');
             new_post.setAttribute('id', 'div-post-' + i.toString());
-            new_post.innerHTML = "추가된 p태그";
+            new_post.innerHTML = "";
             // Post's title, desc, img
             new_post_title.setAttribute('class', 'post-title');
             new_post_title.setAttribute('href', 'https://goddot.kr');
@@ -23,8 +23,7 @@ window.addEventListener('DOMContentLoaded', function() {
             new_post_description.setAttribute('class', 'post-desc');
             new_post_description.innerHTML = "설명";
             new_post_image.setAttribute('class', 'post-img');
-            new_post_image.setAttribute('src', 'https://goddot.kr/goddot.jpg');
-            new_post_image.setAttribute('alt', '공지사항 ' + i + '번 이미지');
+            new_post_image.setAttribute('style', 'background-image:url(\'https://goddot.kr/goddot.jpg\');');
             new_post_image.innerHTML = "";
             // Add
             posts_div.appendChild(new_post);

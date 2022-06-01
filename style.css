@@ -51,6 +51,21 @@ a {
     margin-bottom: 12;
 }
 
+.post-img {
+    width: 100%;
+    height: 40%;
+    display: inline-block;
+    border-radius: 9px 9px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : cover;
+}
+
+.post-title {
+    display: block;
+    font-size: 20px;
+}
+
 .div-post-empty {
     width: 24.2%;
     height: 300px;
