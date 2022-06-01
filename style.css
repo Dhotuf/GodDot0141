@@ -7,10 +7,14 @@ body {
     background-color: #f3f4f6;
 }
 
+a {
+    text-decoration: none;
+}
+
 .div-title {
     width: 80%;
-    height: 140px;
-    line-height: 140px; /* value = height */
+    height: 190px;
+    line-height: 200px; /* value = height + 10 */
     border-radius: 9px;
     border-width: 0;
     display: inline-block;
@@ -26,6 +30,25 @@ body {
 }
 
 .div-posts {
-    margin-top: 12;
-    float: top;
+    width: 80%;
+    margin: 12 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    float: left;
+}
+
+.div-post {
+    width: 24.2%;
+    height: 300px;
+    border: 1px solid;
+    margin-bottom: 12;
+}
+
+.div-post-empty {
+    width: 24.2%;
+    height: 300px;
+    margin-bottom: 12;
 }
