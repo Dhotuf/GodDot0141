@@ -1,0 +1,9 @@
+{
+  "posts": [
+    {
+      "title": "공지 제목",
+      "description": "간단한 설명입니다",
+      "linkUrl": "https://www.google.co.kr/search?q=클릭시+연결될+링크입니다"
+    }
+  ]
+}
