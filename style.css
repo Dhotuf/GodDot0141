@@ -18,6 +18,7 @@ a {
     border-radius: 9px;
     border-width: 0;
     display: inline-block;
+    box-shadow: 0px 0px 7px 3px #d3d4d6;
     /* Background config */
     background-image:url('goddot.jpg');
     background-repeat: no-repeat;
@@ -43,7 +44,10 @@ a {
 .div-post {
     width: 24.2%;
     height: 300px;
-    border: 1px solid;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 7px 3px #d3d4d6;
     margin-bottom: 12;
 }
 
